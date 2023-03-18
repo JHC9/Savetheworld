@@ -85,7 +85,7 @@ def read_cookie():
         
     else:
         print('No cookie found.')
-    return jsonify({'status': 'success'})
+    return render_template('timetable_pdf.html',data1 = data1)
 
 
 if __name__ == '__main__':
